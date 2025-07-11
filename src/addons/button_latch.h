@@ -5,8 +5,9 @@
 
 class ButtonLatchAddon : public Addon {
 public:
-    virtual void setup();     // Called once at boot
-    virtual void process();   // Called every main loop
+    void setup() override;
+    void process() override;
+    bool available() override;
 
 private:
     bool latchedState;
