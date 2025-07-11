@@ -26,3 +26,7 @@ void ButtonLatchAddon::process() {
 
     lastButtonState = currentButtonState;
 }
+
+bool ButtonLatchAddon::available() {
+    return true;  // Always enable this add-on
+}
